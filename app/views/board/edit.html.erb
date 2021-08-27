@@ -1,0 +1,7 @@
+<form action="/update" method="post">
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	<input name="id" value="<%= @post.id %>" type="hidden">
+  제목: <input type="text" name="title" value="<%= @post.title %>"><br>
+  내용: <input type="text" name="content" value="<%= @post.content %>"><br>
+  <input type="submit" value="Submit">
+</form>
